@@ -4,8 +4,14 @@
     --cor-principal: #140F10;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria:#AC96FB ;
+    --cor-borda-links: #605DAC;
+    --cor-hover: #272727;
+    --fonte-principal: 'Krona one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
 
 }
+
+
 
 * {
     margin: 0;
@@ -15,8 +21,9 @@
 body {
     box-sizing: border-box;
     /* height: 100vh; */
-    background-color: #140F10;
-    color: #F6F6F6;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+
 
 }
 
@@ -34,7 +41,7 @@ body {
 
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var (--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
     color:#AC96FB;
@@ -67,17 +74,18 @@ height:500px;
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family:'Krona one', sans-serif;
+    font-family: var(--fonte-principal);
+    
 
 }
 
 .titulo-destaque {
-    color: #AC96FB
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__paragrafo {
     font-size: 24px;
-    font-family:'Montserrat',sans-serif;
+    font-family: var(--fonte-secundaria);
     
 }
 
@@ -92,7 +100,7 @@ height:500px;
 }
 
 .apresentacao__subtitulo {
-    font-family: 'Krona one', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 24px;
 }
@@ -102,7 +110,7 @@ height:500px;
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #605DAC;
+    border: 2px solid var(--cor-borda-links);
     width: 378px;
     text-align:center;
     border-radius: 8px;
@@ -110,7 +118,7 @@ height:500px;
     padding: 21.5px 0;
     text-decoration: none;
     color: #F6F6F6;
-    font-family: 'Montserat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     
 
@@ -121,7 +129,7 @@ height:500px;
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .minhafoto {
@@ -137,8 +145,8 @@ height:500px;
     padding: 24px;
     text-align: center;
     color:#140F10;
-    background-color: #AC96FB;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;    
 }
